@@ -32,7 +32,7 @@ int main(){
     for(int j = 1; j <= n; j++){
         if(dis[j] == inf)continue;
         for(pii adyacente : ad[j]){
-            if(dis[adyacente.ff] < dis[j] + adyacente.ss){
+            if(dis[adyacente.ff] > dis[j] + adyacente.ss){
                 ciclo = true;
                 break;
             }
